@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: test1
+    columns:
+      - name: col
+        tests:
+          - not_null
+          - unique
