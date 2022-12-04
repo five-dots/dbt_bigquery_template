@@ -7,3 +7,10 @@ models:
         tests:
           - not_null
           - unique
+
+  - name: test2
+    columns:
+      - name: col
+        tests:
+          - not_null
+          - unique
