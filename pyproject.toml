@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dbt_bigquery_template"
+version = "0.1.0"
+description = ""
+authors = ["Shun Asai <shun.asai@tmkc.co.jp>"]
+readme = "README.md"
+packages = [{include = "dbt_bigquery_template"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+dbt-bigquery = "^1.3.0"
+sqlfluff = "^1.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

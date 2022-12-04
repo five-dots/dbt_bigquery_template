@@ -1,0 +1,29 @@
+name: 'dbt_bigquery_template'
+version: '0.1.0'
+config-version: 2
+
+profile: 'dbt_bigquery_template'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_bigquery_template:
+    +persist_docs:
+      relation: true
+      columns: true
+
+seeds:
+  dbt_bigquery_template:
+    +persist_docs:
+      relation: true
+      columns: true
