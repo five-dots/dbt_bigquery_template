@@ -26,9 +26,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "dorzey.vscode-sqlfluff",
+        "fivetran.dbt-language-server",
+        "minodisk.bigquery-runner",
         "ms-python.python",
-        "ms-python.vscode-pylance",
-        "dorzey.vscode-sqlfluff"
+        "ms-python.vscode-pylance"
       ]
     }
   }
