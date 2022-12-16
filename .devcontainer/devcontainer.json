@@ -1,0 +1,35 @@
+{
+  "name": "dbt_bigquery_template",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "3.9"
+    }
+  },
+  "remoteUser": "vscode",
+  "remoteEnv": {
+    "CLOUDSDK_CONFIG": "/home/vscode/.gcloud"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/.dbt,target=/home/vscode/.dbt,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.gcloud,type=bind,consistency=cached"
+  ],
+  "features": {
+    "ghcr.io/dhoeric/features/google-cloud-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/lukewiwa/features/shellcheck:0": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "dorzey.vscode-sqlfluff"
+      ]
+    }
+  }
+}

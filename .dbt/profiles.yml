@@ -1,0 +1,13 @@
+dbt_bigquery_template:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      project: tmkc-eval-general
+      dataset: dbt_bigquery_template
+      location: US
+      method: oauth
+      priority: interactive
+      threads: 4
+      job_retries: 1
+      job_execution_timeout_seconds: 300
