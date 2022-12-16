@@ -1,0 +1,31 @@
+[sqlfluff]
+dialect = bigquery
+
+# L022: Blank line expected but not found after CTE closing bracket
+# L025: Tables should not be aliased if that alias is not used
+# L026: References cannot reference objects not present in FROM clause (BQ default: disabled)
+# L028: References should be consistent in statements with a single table (BQ default: disabled)
+# L031: Avoid table aliases in from clauses and join conditions (BQ default: disabled)
+# L032: Prefer specifying join keys instead of using USING
+# L036: Select targets should be on a new line unless there is only one select target
+exclude_rules = L022,L026,L032,L036
+
+[sqlfluff:rules]
+tab_space_size = 2
+max_line_length = 100
+
+# Capitalization policy: Keywords
+[sqlfluff:rules:L010]
+capitalisation_policy = lower
+
+# Capitalization policy: Functions
+[sqlfluff:rules:L030]
+extended_capitalisation_policy = lower
+
+# Capitalization policy: Boolean/Null literal
+[sqlfluff:rules:L040]
+capitalisation_policy = lower
+
+# Trailing commas within select clause
+[sqlfluff:rules:L038]
+select_clause_trailing_comma = require
