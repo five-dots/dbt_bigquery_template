@@ -30,7 +30,7 @@
         "ms-python.vscode-pylance"
       ],
       "settings": {
-        "sqlfluff.linter.run": "onType",
+        "sqlfluff.linter.run": "onSave",
         "sqlfluff.linter.lintEntireProject": true,
         "sqlfluff.format.arguments": ["--FIX-EVEN-UNPARSABLE"]
       }
