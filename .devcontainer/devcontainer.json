@@ -28,7 +28,12 @@
         "minodisk.bigquery-runner",
         "ms-python.python",
         "ms-python.vscode-pylance"
-      ]
+      ],
+      "settings": {
+        "sqlfluff.linter.run": "onType",
+        "sqlfluff.linter.lintEntireProject": true,
+        "sqlfluff.format.arguments": ["--FIX-EVEN-UNPARSABLE"]
+      }
     }
   },
   "postCreateCommand": "sudo chown vscode:vscode /home/vscode/.config"
