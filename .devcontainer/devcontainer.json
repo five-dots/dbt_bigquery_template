@@ -8,12 +8,9 @@
     }
   },
   "remoteUser": "vscode",
-  "remoteEnv": {
-    "CLOUDSDK_CONFIG": "/home/vscode/.gcloud"
-  },
   "mounts": [
     "source=${localWorkspaceFolder}/.dbt,target=/home/vscode/.dbt,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.gcloud,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.config/gcloud,type=bind,consistency=cached"
   ],
   "features": {
     "ghcr.io/dhoeric/features/google-cloud-cli:1": {
@@ -33,5 +30,6 @@
         "ms-python.vscode-pylance"
       ]
     }
-  }
+  },
+  "postCreateCommand": "sudo chown vscode:vscode /home/vscode/.config"
 }
