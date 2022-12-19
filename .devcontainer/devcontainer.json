@@ -4,7 +4,7 @@
     "context": "..",
     "dockerfile": "Dockerfile",
     "args": {
-      "VARIANT": "3.9"
+      "VARIANT": "ubuntu-22.04"
     }
   },
   "remoteUser": "vscode",
@@ -12,14 +12,6 @@
     "source=${localWorkspaceFolder}/.dbt,target=/home/vscode/.dbt,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.config/gcloud,type=bind,consistency=cached"
   ],
-  "features": {
-    "ghcr.io/dhoeric/features/google-cloud-cli:1": {
-      "version": "latest"
-    },
-    "ghcr.io/lukewiwa/features/shellcheck:0": {
-      "version": "latest"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [
