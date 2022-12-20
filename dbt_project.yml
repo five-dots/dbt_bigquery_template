@@ -17,13 +17,13 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  dbt_bigquery_template:
+  "%DBT_PROJECT%":
     +persist_docs:
       relation: true
       columns: true
 
 seeds:
-  dbt_bigquery_template:
+  "%DBT_PROJECT%":
     +persist_docs:
       relation: true
       columns: true
