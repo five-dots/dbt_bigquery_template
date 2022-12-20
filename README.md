@@ -95,9 +95,11 @@ To adapt linter/formatter at commit time, run the following command to enable `p
 pre-commit install
 ```
 
-#### Ctrl-p: Open in
+#### Re-open the folder in vscode using devcontainer
 
 Run ctrl-p ***"Dev Container: Reopen in container"*** in vscode to reopen the project in devcontainer.
+
+Now dbt development can be done in a container. Let's see if we can run `dbt compile`.
 
 ### Special thanks
 
