@@ -17,6 +17,7 @@
       "extensions": [
         "dorzey.vscode-sqlfluff",
         "fivetran.dbt-language-server",
+        "mads-hartmann.bash-ide-vscode",
         "minodisk.bigquery-runner",
         "ms-python.python",
         "ms-python.vscode-pylance"
