@@ -88,4 +88,7 @@ sed -e "s/%BQ_PROJECT%/${bq_project}/g" \
     -e "s/%BQ_LOCATION%/${bq_location}/g" \
     -i "${dir}/.dbt/profiles.yml"
 
+# Clean up README.md
+echo "# ${dbt_project}" > "README.md"
 
+echo "Done!"
