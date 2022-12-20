@@ -101,6 +101,6 @@ Run ctrl-p ***"Dev Container: Reopen in container"*** in vscode to reopen the pr
 
 Now dbt development can be done in a container. Let's see if we can run `dbt compile`.
 
-### Special thanks
+### Reference repository
 
 - [davidgasquez/dbt-devcontainer](https://github.com/davidgasquez/dbt-devcontainer)
