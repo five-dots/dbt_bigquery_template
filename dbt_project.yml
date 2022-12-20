@@ -1,5 +1,5 @@
-name: 'dbt_bigquery_template'
-version: '0.1.0'
+name: "%DBT_PROJECT%"
+version: "0.1.0"
 config-version: 2
 
 profile: "default"

@@ -3,9 +3,9 @@ default:
   outputs:
     dev:
       type: bigquery
-      project: tmkc-eval-general
-      dataset: dbt_bigquery_template
-      location: US
+      project: %BQ_PROJECT%
+      dataset: %BQ_DATASET%
+      location: %BQ_LOCATION%
       method: oauth
       priority: interactive
       threads: 4
