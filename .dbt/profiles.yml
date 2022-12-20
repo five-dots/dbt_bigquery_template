@@ -1,4 +1,4 @@
-dbt_bigquery_template:
+default:
   target: dev
   outputs:
     dev:

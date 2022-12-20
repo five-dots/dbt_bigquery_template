@@ -2,7 +2,7 @@ name: 'dbt_bigquery_template'
 version: '0.1.0'
 config-version: 2
 
-profile: 'dbt_bigquery_template'
+profile: "default"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
