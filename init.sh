@@ -72,10 +72,11 @@ bq_project=${P:-${default_bq_project}}
 bq_dataset=${d:-${default_bq_dataset}}
 bq_location=${l:-${default_bq_location}}
 
-echo "${dbt_project}"
-echo "${bq_project}"
-echo "${bq_dataset}"
-echo "${bq_location}"
+echo "dbt project: ${dbt_project}"
+echo "BigQuery project: ${bq_project}"
+echo "BigQuery dataset: ${bq_dataset}"
+echo "BigQuery location: ${bq_location}"
+echo ""
 
 # dbt_project.yml
 sed -e "s/%DBT_PROJECT%/${dbt_project}/g" \
