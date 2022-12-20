@@ -64,7 +64,7 @@ Set the values of the arguments in the list below to suit your needs.
 An example run is shown in:
 
 ``` sh
-init.sh \
+./init.sh \
     --dbt-project="my_dbt_project" \
     --bq-project="my_bq_project" \
     --bq-dataset="my_bq_dataset" \
